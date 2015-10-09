@@ -1,0 +1,16 @@
+{
+  "name": "CustomerInquirySQL",
+  "version": "1.0.0",
+  "description": "Gather data on potential interest in online business programs.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Jacqueline Snyder <jdsnder1@buffs.wtamu.edu>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "socket.io": "~0.9.14",
+    "mysql": "~2.9.0",
+    "body-parser": "~1.14.0",
+    "ejs": ">=v2.3.4"
+  }
+}

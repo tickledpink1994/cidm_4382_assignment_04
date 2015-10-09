@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+        <style>
+            body {
+              padding-top: 10px;
+            }
+        </style>        
+    </head>
+    <body>
+        <div class='page-header'>
+            <h2>Queries</h2>
+            <p><a href="/">Return to Form</a></p>
+        </div>
+        <div class="table table-condensed table-responsive">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email</th>
+                      <th>Management</th>
+                      <th>Marketing</th>
+                      <th>General Business</th>
+                      <th>Economics</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <% results.forEach(function(result) { %>
+                    <tr>
+                        <td><%= result.firstName %></td>
+                        <td><%= result.lastName %></td>
+                        <td><%= result.email %></td>
+                        <td><%= result.management %></td>
+                        <td><%= result.marketing %></td>
+                        <td><%= result.general %></td>
+                        <td><%= result.economics %></td>
+                    </tr>
+                <% }); %>                  
+              </tbody>
+          </table>
+        </div>        
+    </body>
+</html>

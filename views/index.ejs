@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Online BBA Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <style>
+    body {
+      padding-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-header">
+    <h1>Online BBA Example</h1>
+    <p><a href="/query">Go to Queries</a></p>
+    <p style="color: red;"><%= insertSuccess %></p>
+  </div>
+  <div class="container-fluid">
+    <!-- form grouping is handled by the name of each radio button -->
+    <form action="/inquiry" method='post'>
+      <div class="form-group col-md-4">
+        <label for="management">Management</label>
+        <input type="radio" name="program" class="radio" id="management" value="1">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="marketing">Marketing</label>
+        <input type="radio" name="program" class="radio" id="marketing" value="2">
+      </div class="form-group col-md-4">
+      <label for="genbus">General Business</label>
+      <input type="radio" name="program" class="radio" id="genbus" value="3">
+      <div class="form-group col-md-4">
+        <label for="economics">Economics</label>
+        <input type="radio" name="program" class="radio" id="economics"  value="4">
+      </div>
+      <hr>
+      <div class="form-group col-md-4">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" class="form-control" id="fname">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" class="form-control" id="lname">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="form-control" id="email">
+      </div>
+      <div class="form-group col-md-4">
+        <input type="submit" name="submit" id="submit" value="submit">
+      </div>
+    </form>
+  </div>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/angular.min.js"></script>
+</body>
+
+</html>
